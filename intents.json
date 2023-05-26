@@ -1,0 +1,771 @@
+{
+   "intents":[
+ {
+   "tag": "greeting",
+   "patterns": [
+      "Hi",
+      "How are you?",
+      "Is anyone there?",
+      "Hello",
+      "Good day",
+      "What's up",
+      "how are ya",
+      "heyy",
+      "whatsup",
+      "??? ??? ??"
+   ],
+   "responses": [
+      "Hello!",
+      "Good to see you again!",
+      "Hi there, how can I help?"
+   ],
+   "context_set": ""
+},
+ {
+   "tag": "goodbye",
+   "patterns": [
+      "cya",
+      "see you",
+      "bye bye",
+      "See you later",
+      "Goodbye",
+      "I am Leaving",
+      "Bye",
+      "Have a Good day",
+      "talk to you later",
+      "ttyl",
+      "i got to go",
+      "gtg"
+   ],
+   "responses": [
+      "Sad to see you go :(",
+      "Talk to you later",
+      "Goodbye!",
+      "Come back soon"
+   ],
+   "context_set": ""
+},
+ {
+   "tag": "creator",
+   "patterns": [
+      "what is the name of your developers",
+      "what is the name of your creators",
+      "what is the name of the developers",
+      "what is the name of the creators",
+      "who created you",
+      "your developers",
+      "your creators",
+      "who are your developers",
+      "developers",
+      "you are made by",
+      "you are made by whom",
+      "who created you",
+      "who create you",
+      "creators",
+      "who made you",
+      "who designed you"
+   ],
+   "responses": [
+      "Adebisi Ruth and Eniola Precious"
+   ],
+   "context_set": ""
+},
+ {
+   "tag": "name",
+   "patterns": [
+      "name",
+      "your name",
+      "do you have a name",
+      "what are you called",
+      "what is your name",
+      "what should I call you",
+      "whats your name?",
+      "what are you",
+      "who are you",
+      "who is this",
+      "what am i chatting to",
+      "who am i taking to",
+      "what are you"
+   ],
+   "responses": [
+      "You can call me Mind Reader.",
+      "I'm the University Administrative Chatbot",
+      "My name is LeadBot",
+      "I am LeadBot.",
+      "I am a chatbot",
+      "My name is LeadBot",
+      "LeadBot"
+   ],
+   "context_set": ""
+},
+ {
+   "tag": "hours",
+   "patterns": [
+      "timing of University",
+      "what is University timing",
+      "working days",
+      "when are you guys open",
+      "what are your hours",
+      "hours of operation",
+      "when is the University open",
+      "University timing",
+      "what about University timing",
+      "is University open on saturday",
+      "tell something about University timing",
+      "what is the University  hours",
+      "when should i come to University",
+      "when should i attend University",
+      "what is my University time",
+      "University timing",
+      "timing University"
+   ],
+   "responses": [
+      "University is open 8am-5pm Monday-Saturday!"
+   ],
+   "context_set": ""
+},
+ {
+   "tag": "number",
+   "patterns": [
+      "more info",
+      "contact info",
+      "how to contact University",
+      "University telephone number",
+      "University number",
+      "What is your contact no",
+      "Contact number?",
+      "how to call you",
+      "University phone no?",
+      "how can i contact you",
+      "Can i get your phone number",
+      "how can i call you",
+      "phone number",
+      "phone no",
+      "call"
+   ],
+   "responses": [
+      "You can contact at: +23412345"
+   ],
+   "context_set": ""
+},
+ {
+   "tag": "course",
+   "patterns": [
+      "list of courses",
+      "list of courses offered",
+      "list of courses offered in",
+      "what are the courses offered in your University?",
+      "courses?",
+      "courses offered",
+      "courses offered in (your university(Lead City) name)",
+      "courses you offer",
+      "branches?",
+      "courses available at Lead City?",
+      "branches available at your University?",
+      "what are the courses in Lead City?",
+      "what are branches in Lead City?",
+      "what are courses in Lead City?",
+      "branches available in Lead City?",
+      "can you tell me the courses available in Lead City?",
+      "can you tell me the branches available in Lead City?",
+      "computer engineering?",
+      "computer",
+      "Computer engineering?",
+      "it",
+      "IT",
+      "Information Technology",
+      "AI/Ml",
+      "Mechanical engineering",
+      "Chemical engineering",
+      "Civil engineering"
+   ],
+   "responses": [
+      "Our university offers Information Technology, computer Engineering, Mechanical engineering,Chemical engineering, Civil engineering and extc Engineering.",
+      "We offer various programs at the university, For specific course information, visit each departments dedicated page"
+   ],
+   "context_set": ""
+},
+ {
+   "tag": "fees",
+   "patterns": [
+      "information about fee",
+      "information on fee",
+      "tell me the fee",
+      "University fee",
+      "fee per semester",
+      "what is the fee of each semester",
+      "what is the fees of each year",
+      "what is fee",
+      "what is the fees",
+      "how much is the fees",
+      "fees for first year",
+      "fees",
+      "about the fees",
+      "tell me something about the fees",
+      "What is the fees of hostel",
+      "how much is the fees",
+      "hostel fees",
+      "fees for AC room",
+      "fees for non-AC room",
+      "fees for Ac room for girls",
+      "fees for non-Ac room for girls",
+      "fees for Ac room for boys",
+      "fees for non-Ac room for boys"
+   ],
+   "responses": [
+      "For Fee detail visit <a target=\"_blank\" href=\"LINK\"> here</a>"
+   ],
+   "context_set": ""
+},
+ {
+   "tag": "location",
+   "patterns": [
+      "where is the University located",
+      "University is located at",
+      "where is University",
+      "where is University located",
+      "address of University",
+      "how to reach University",
+      "University location",
+      "University address",
+      "wheres the University",
+      "how can I reach University",
+      "whats is the University address",
+      "what is the address of University",
+      "address",
+      "location"
+   ],
+   "responses": [
+      "Our School is located <a target=\"_blank\" href=\"ADD YOU GOOGLE MAP LINK HERE\"> here</a>"
+   ],
+   "context_set": ""
+},
+ {
+   "tag": "hostel",
+   "patterns": [
+      "hostel facility",
+      "hostel servive",
+      "hostel location",
+      "hostel address",
+      "hostel facilities",
+      "hostel fees",
+      "Does University provide hostel",
+      "Is there any hostel",
+      "Where is hostel",
+      "do you have hostel",
+      "do you guys have hostel",
+      "hostel",
+      "hostel capacity",
+      "what is the hostel fee",
+      "how to get in hostel",
+      "what is the hostel address",
+      "how far is hostel from University",
+      "hostel University distance",
+      "where is the hostel",
+      "how big is the hostel",
+      "distance between University and hostel",
+      "distance between hostel and University"
+   ],
+   "responses": [
+      "For specific hostel details visit the accomodations <a target=\"_blank\" href=\"ADD YOUR HOSTEL DETAIL PDF LINK OR ANY INFORMATION LINK OR ADD YOU OWN ANSWERS\"> here</a>"
+   ],
+   "context_set": ""
+},
+ {
+   "tag": "event",
+   "patterns": [
+      "events organised",
+      "list of events",
+      "list of events organised in University",
+      "list of events conducted in University",
+      "What events are conducted in University",
+      "Are there any event held at University",
+      "Events?",
+      "functions",
+      "what are the events",
+      "tell me about events",
+      "what about events"
+   ],
+   "responses": [
+      "For event detail visit <a target=\"_blank\" href=\"ADD YOUR FUNCTIONS LINK OR YOUR OWN RESPONSE\"> here</a>"
+   ],
+   "context_set": ""
+},
+ {
+   "tag": "document",
+   "patterns": [
+      "document to bring",
+      "documents needed for admision",
+      "documents needed at the time of admission",
+      "documents needed during admission",
+      "documents required for admision",
+      "documents required at the time of admission",
+      "documents required during admission",
+      "What document are required for admission",
+      "Which document to bring for admission",
+      "documents",
+      "what documents do i need",
+      "what documents do I need for admission",
+      "documents needed"
+   ],
+   "responses": [
+      "To know more about document required visit <a target=\"_blank\" href=\"ADD LINK OF ADMISSION GUIDANCE DOCUMENT FROM YOUR UNIVERSITY WEBSITE\"> here</a>"
+   ],
+   "context_set": ""
+},
+ {
+   "tag": "floors",
+   "patterns": [
+      "size of campus",
+      "building size",
+      "How many floors does University have",
+      "floors in University",
+      "floors in University",
+      "how tall is UNI's University of Engineering University building",
+      "floors"
+   ],
+   "responses": [
+      "My University has total 2 floors "
+   ],
+   "context_set": ""
+},
+ {
+   "tag": "syllabus",
+   "patterns": [
+      "Syllabus for IT",
+      "what is the Information Technology syllabus",
+      "syllabus",
+      "timetable",
+      "what is IT syllabus",
+      "syllabus",
+      "What is next lecture"
+   ],
+   "responses": [
+      "Timetable provide direct to the students OR To know about syllabus visit <a target=\"_blank\" href=\"TIMETABLE LINK\"> here</a>"
+   ],
+   "context_set": ""
+},
+ {
+   "tag": "library",
+   "patterns": [
+      "is there any library",
+      "library facility",
+      "library facilities",
+      "do you have library",
+      "does the University have library facility",
+      "University library",
+      "where can i get books",
+      "book facility",
+      "Where is library",
+      "Library",
+      "Library information",
+      "Library books information",
+      "Tell me about library",
+      "how many libraries"
+   ],
+   "responses": [
+      "There is one huge and spacious library.timings are 8am to 6pm and for more visit <a target=\"blank\" href=\"ADD LIBRARY DETAIL LINK\">here</a>"
+   ],
+   "context_set": ""
+},
+ {
+   "tag": "infrastructure",
+   "patterns": [
+      "how is University infrastructure",
+      "infrastructure",
+      "University infrastructure"
+   ],
+   "responses": [
+      "Our University has Excellent Infrastructure. Campus is clean. Good IT Labs With Good Speed of Internet connection"
+   ],
+   "context_set": ""
+},
+ {
+   "tag": "canteen",
+   "patterns": [
+      "food facilities",
+      "canteen facilities",
+      "canteen facility",
+      "is there any canteen",
+      "Is there a cafetaria in University",
+      "Does University have canteen",
+      "Where is canteen",
+      "where is cafetaria",
+      "canteen",
+      "Food",
+      "Cafetaria"
+   ],
+   "responses": [
+      "Our university has canteen with variety of food available"
+   ],
+   "context_set": ""
+},
+ {
+   "tag": "menu",
+   "patterns": [
+      "food menu",
+      "food in canteen",
+      "Whats there on menu",
+      "what is available in University canteen",
+      "what foods can we get in University canteen",
+      "food variety",
+      "What is there to eat?"
+   ],
+   "responses": [
+      "we serve Rice, Swallow, porridge-beans, pasta, salads, Thaali and many more on menu",
+      "We serve many local nigerrian dishes, for more visit <a target=\"blank\" href=\"ADD CANTEEN DETAIL LINK\">here</a>"
+   ],
+   "context_set": ""
+},
+ {
+   "tag": "placement",
+   "patterns": [
+      "What is University placement",
+      "Which companies visit in University",
+      "What is average package",
+      "companies visit",
+      "package",
+      "About placement",
+      "placement",
+      "recruitment",
+      "companies"
+   ],
+   "responses": [
+      "To know about placement visit <a target=\"_blank\" href=\"PLACEMENT INFORMATION LINK FROM YOUR UNIVERSITY WEBSITE IF THEY HAVE\">here</a>",
+      "Yow will have to make an online application and meet specific admisssion requiremrnts to be accepted into the university. visit <a target=\"_blank\" href=\"PLACEMENT INFORMATION LINK FROM YOUR UNIVERSITY WEBSITE IF THEY HAVE\">here</a> "],
+   "context_set": ""
+},
+ {
+   "tag": "ithod",
+   "patterns": [
+      "Who is HOD",
+      "Where is HOD",
+      "it hod",
+      "name of it hod"
+   ],
+   "responses": [
+      "All engineering departments have only one hod XYZ who available on (Place name)"
+   ],
+   "context_set": ""
+},
+ {
+   "tag": "computerhod",
+   "patterns": [
+      "Who is computer HOD",
+      "Where is computer HOD",
+      "computer hod",
+      "name of computer hod"
+   ],
+   "responses": [
+      "All engineering departments have only one hod XYZ who available on (PLACE NAME)"
+   ],
+   "context_set": ""
+},
+ {
+   "tag": "extchod",
+   "patterns": [
+      "Who is HOD",
+      "Where is  extc HOD",
+      "extc hod",
+      "name of extc hod"
+   ],
+   "responses": [
+      "The hod i.So be more clear with your school or department"
+   ],
+   "context_set": ""
+},
+ {
+   "tag": "registrar",
+   "patterns": [
+      "what is the name of registrar",
+      "what is the registrar name",
+      "registrar name",
+      "Who is University registrar",
+      "Where is registrar's office",
+      "registrar",
+      "Registrar",
+      "name of registrar"
+   ],
+   "responses": [
+      "Dr (Mrs) Oyebola Ayeni is University registrar and if you need any help then call your branch hod first.That is more appropriate"
+   ],
+   "context_set": ""
+},
+ {
+   "tag": "sem",
+   "patterns": [
+      "exam dates",
+      "exam schedule",
+      "When is semester exam",
+      "Semester exam timetable",
+      "sem",
+      "semester",
+      "exam",
+      "when is exam",
+      "exam timetable",
+      "exam dates",
+      "when is semester"
+   ],
+   "responses": [
+      "Here is the Academic Calendar  <a target=\"_blank\" href=\"YOUR ACADEMIC CALENDER\">website</a>"
+   ],
+   "context_set": ""
+},
+ {
+   "tag": "admission",
+   "patterns": [
+      "what is the process of admission",
+      "what is the admission process",
+      "How to take admission in your University",
+      "What is the process for admission",
+      "admission",
+      "admission process",
+      "apply",
+      "how do I apply"
+   ],
+   "responses": [
+      "Application can also be submitted online through the Unversity's  <a target=\"_blank\" href=\"LINK OF ADMISSION DOCUMENT\">website</a>"
+   ],
+   "context_set": ""
+},
+ {
+   "tag": "scholarship",
+   "patterns": [
+      "scholarship",
+      "Is scholarship available",
+      "scholarship engineering",
+      "scholarship it",
+      "scholarship ce",
+      "scholarship mechanical",
+      "scholarship civil",
+      "scholarship chemical",
+      "scholarship for AI/ML",
+      "available scholarships",
+      "scholarship for computer engineering",
+      "scholarship for IT engineering",
+      "scholarship for mechanical engineering",
+      "scholarship for civil engineering",
+      "scholarship for chemical engineering",
+      "list of scholarship",
+      "comps scholarship",
+      "IT scholarship",
+      "mechanical scholarship",
+      "civil scholarship",
+      "chemical scholarship",
+      "automobile scholarship",
+      "first year scholarship",
+      "second year scholarship",
+      "third year scholarship",
+      "fourth year scholarship"
+   ],
+   "responses": [
+      "Many government scholarships are supported by our university. For details and updates visit <a target=\"_blank\" href=\"(SCHOLARSHIP DETAILS LINK)\">here</a>"
+   ],
+   "context_set": ""
+},
+ {
+   "tag": "facilities",
+   "patterns": [
+      "What facilities University provide",
+      "University facility",
+      "What are University facilities",
+      "facilities",
+      "facilities provided"
+   ],
+   "responses": [
+      "Our university's Engineering department provides fully AC Lab with internet connection, smart classroom, Auditorium, library,canteen"
+   ],
+   "context_set": ""
+},
+ {
+   "tag": "University intake",
+   "patterns": [
+      "max number of students",
+      "number of seats per branch",
+      "number of seats in each branch",
+      "maximum number of seats",
+      "maximum students intake",
+      "What is University intake",
+      "how many stundent are taken in each branch",
+      "seat allotment",
+      "seats"
+   ],
+   "responses": [
+      "For IT, Computer and extc 60 per branch and seat may be differ for different department."
+   ],
+   "context_set": ""
+},
+ {
+   "tag": "uniform",
+   "patterns": [
+      "University dress code",
+      "University dresscode",
+      "what is the uniform",
+      "can we wear casuals",
+      "Does University have an uniform",
+      "Is there any uniform",
+      "uniform",
+      "what about uniform",
+      "do we have to wear uniform"
+   ],
+   "responses": [
+      "All students are advised to dress in accordance with the dress code in the Student Handbook"
+   ],
+   "context_set": ""
+},
+ {
+   "tag": "committee",
+   "patterns": [
+      "what are the different committe in University",
+      "different committee in University",
+      "Are there any committee in University",
+      "Give me committee details",
+      "committee",
+      "how many committee are there in University"
+   ],
+   "responses": [
+      "For the various committe in University contact this number: ADD NUMBER"
+   ],
+   "context_set": ""
+},
+ {
+   "tag": "random",
+   "patterns": [
+      "I love you",
+      "Will you marry me",
+      "Do you love me"
+   ],
+   "responses": [
+      "I am not program for this, please ask appropriate query"
+   ],
+   "context_set": ""
+},
+ {
+   "tag": "swear",
+   "patterns": [
+      "fuck",
+      "bitch",
+      "shut up",
+      "hell",
+      "stupid",
+      "idiot",
+      "dumb ass",
+      "asshole",
+      "fucker"
+   ],
+   "responses": [
+      "please use appropriate language",
+      "Maintaining decency would be appreciated"
+   ],
+   "context_set": ""
+},
+ {
+   "tag": "vacation",
+   "patterns": [
+      "holidays",
+      "when will semester starts",
+      "when will semester end",
+      "when is the holidays",
+      "list of holidays",
+      "Holiday in these year",
+      "holiday list",
+      "about vacations",
+      "about holidays",
+      "When is vacation",
+      "When is holidays",
+      "how long will be the vacation"
+   ],
+   "responses": [
+      "Academic calender is given to you by your class-coordinators after you join your respective classes",
+      "Kindly contact your class-coordinator"
+   ],
+   "context_set": ""
+},
+ {
+   "tag": "sports",
+   "patterns": [
+      "sports and games",
+      "give sports details",
+      "sports infrastructure",
+      "sports facilities",
+      "information about sports",
+      "Sports activities",
+      "please provide sports and games information"
+   ],
+   "responses": [
+      "Our university encourages all-round development of students and hence provides sports facilities in the campus. For more details visit<a target=\"_blank\" href=/\"(LINK IF HAVE)\">here</a>"
+   ],
+   "context_set": ""
+},
+ {
+   "tag": "salutaion",
+   "patterns": [
+      "okk",
+      "okie",
+      "nice work",
+      "well done",
+      "good job",
+      "thanks for the help",
+      "Thank You",
+      "its ok",
+      "Thanks",
+      "Good work",
+      "k",
+      "ok",
+      "okay"
+   ],
+   "responses": [
+      "I am glad I helped you",
+      "welcome, anything else i can assist you with?"
+   ],
+   "context_set": ""
+},
+ {
+   "tag": "task",
+   "patterns": [
+      "what can you do",
+      "what are the thing you can do",
+      "things you can do",
+      "what can u do for me",
+      "how u can help me",
+      "why i should use you"
+   ],
+   "responses": [
+      "I can answer to low-intermediate questions regarding University",
+      "You can ask me questions regarding University, and i will try to answer them"
+   ],
+   "context_set": ""
+},
+ {
+   "tag": "ragging",
+   "patterns": [
+      "ragging",
+      "is ragging practice active in University",
+      "does University have any antiragging facility",
+      "is there any ragging cases",
+      "is ragging done here",
+      "ragging against",
+      "antiragging facility",
+      "ragging juniors",
+      "ragging history",
+      "ragging incidents"
+   ],
+   "responses": [
+      "We are Proud to tell you that our University provides ragging free environment, and we have strict rules against ragging"
+   ],
+   "context_set": ""
+},
+ {
+   "tag": "hod",
+   "patterns": [
+      "hod",
+      "hod name",
+      "who is the hod"
+   ],
+   "responses": [
+      "HODs differ for each branch, please be more specific like: (HOD it)"
+   ],
+   "context_set": ""
+}
+]
+}
