@@ -6,4 +6,4 @@ The script loads a JSON file called "intents.json", which contains a list of use
 
 The script then creates a neural network model with three layers: a dense input layer with 128 neurons and a ReLU activation function, a dropout layer with a dropout rate of 0.5, a dense hidden layer with 64 neurons and a ReLU activation function, another dropout layer, and a dense output layer with a softmax activation function.
 
-The script compiles the model using the stochastic gradient descent (SGD) optimizer with Nesterov accelerated gradient, and trains the model on the preprocessed data for 200 epochs with a batch size of 5. Finally, it saves the trained model to a file called "model.h5".
+The script compiles the model using the stochastic gradient descent (SGD) optimizer with Nesterov accelerated gradient, and trains the model on the preprocessed data for 200 epochs with a batch size of 5. Finally, it saves the trained model to a file called "model.h5"..
