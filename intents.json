@@ -345,6 +345,23 @@
    ],
    "context_set": ""
 },
+{
+   "tag": "dress code",
+   "patterns": [
+      "what is the dress code for Lead City University",
+      "how do you dress in the university",
+      "is there any dress code in the university",
+      "is trouser allowed in Lead City",
+      "what is dress code ",
+      "dressing",
+      "dresscode",
+      "what to wear"
+   ],
+   "responses": [
+      "The university expects all students to be descently and corporately dressed and have on their identity cards and University Branded Lapel pins while on caampus or o excursions or institutional engagements outside the university environment. /n it is good to note that students will earn additional credits for compliance to dress code"
+   ],
+   "context_set": ""
+},
  {
    "tag": "library",
    "patterns": [
@@ -524,7 +541,7 @@
       "how do I apply"
    ],
    "responses": [
-      "Application can also be submitted online through the Unversity's  <a target=\"_blank\" href=\"LINK OF ADMISSION DOCUMENT\">website</a>"
+      "Application can also be submitted online through the Unversity's  <a target=\"_blank\" href=\"https://admissions.lcu.edu.ng\">website</a>"
    ],
    "context_set": ""
 },
@@ -625,6 +642,21 @@
    ],
    "responses": [
       "For the various committe in University contact this number: ADD NUMBER"
+   ],
+   "context_set": ""
+},
+{
+   "tag": "careers",
+   "patterns": [
+      "what careers are available in University",
+      "different jobs in University",
+      "Are there any employment opportunities in University",
+      "Give me job details",
+      "jobs",
+      "how many jobs are there in University"
+   ],
+   "responses": [
+      "For the various career opportunities in the University check <a href = "
    ],
    "context_set": ""
 },
