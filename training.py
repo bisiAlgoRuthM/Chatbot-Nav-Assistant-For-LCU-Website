@@ -7,7 +7,7 @@ import pickle
 import numpy as np
 from keras.models import Sequential
 from keras.layers import Dense, Activation, Dropout
-from tensorflow.keras.optimizers import SGD
+from keras.optimizers import SGD
 import random
 
 words=[]
@@ -17,6 +17,14 @@ ignore_words = ['?', '!']
 data_file = open('intents.json').read()
 intents = json.loads(data_file)
 
+import pandas as pd
+
+
+data = pd.read_csv('data_extraction/degree_price.csv')
+
+# Extract degree programs and prices as lists
+degree_programs = data['degree_program'].tolist()
+prices = data['price'].tolist()
 
 for intent in intents['intents']:
     for pattern in intent['patterns']:
