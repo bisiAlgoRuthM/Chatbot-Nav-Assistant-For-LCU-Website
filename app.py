@@ -6,12 +6,14 @@ import pickle
 import numpy as np
 
 from keras.models import load_model
-model = load_model('model.h5')
+model = load_model('model.keras')
 import json
 import random
 intents = json.loads(open('intents.json').read())
-words = pickle.load(open('texts.pkl','rb'))
-classes = pickle.load(open('labels.pkl','rb'))
+words = pickle.load(open('words.pkl','rb'))
+classes = pickle.load(open('classes.pkl','rb'))
+degree_programs = pickle.load(open('degree_programs.pkl', 'rb'))
+prices = pickle.load(open('prices.pkl', 'rb'))
 
 def clean_up_sentence(sentence):
     # tokenize the pattern - split words into array
@@ -49,14 +51,38 @@ def predict_class(sentence, model):
         return_list.append({"intent": classes[r[0]], "probability": str(r[1])})
     return return_list
 
-def getResponse(ints, intents_json):
+'''def getResponse(ints, intents_json):
     tag = ints[0]['intent']
     list_of_intents = intents_json['intents']
     for i in list_of_intents:
         if(i['tag']== tag):
             result = random.choice(i['responses'])
             break
+    return result'''
+
+def getResponse(ints, intents_json):
+    tag = ints[0]['intent']
+    list_of_intents = intents_json['intents']
+    for i in list_of_intents:
+        if i['tag'] == tag:
+            if tag == 'degree_price':
+                # Handle degree_price intent separately
+                degree_program = ints[0]['degree_program']
+                if degree_program in degree_programs:
+                    price = get_price(degree_program)
+                    result = f"The price of {degree_program} is {price}."
+                else:
+                    result = "I'm sorry, but I don't have information about that degree program."
+            else:
+                result = random.choice(i['responses'])
+            break
     return result
+
+def get_price(degree_program):
+    # Look up the price for the given degree program
+    index = degree_programs.index(degree_program)
+    return prices[index]
+
 
 def chatbot_response(msg):
     ints = predict_class(msg, model)

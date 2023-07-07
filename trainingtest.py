@@ -1,4 +1,5 @@
 import nltk
+from tensorflow.keras.optimizers.legacy import SGD
 from nltk.stem import WordNetLemmatizer
 import json
 import random
@@ -17,7 +18,7 @@ nltk.download('wordnet')
 # Load the degree program and price data from CSV
 data = pd.read_csv('data_extraction/degree_price.csv')
 degree_programs = data['degree_program'].tolist()
-prices = data['price'].tolist()
+prices = data['Price'].tolist()
 
 # Load intents data
 data_file = open('intents.json').read()
@@ -80,23 +81,26 @@ train_x, test_x, train_y, test_y = train_test_split(X, Y, test_size=0.2, random_
 
 # Create the model
 model = Sequential()
-model.add(Dense(128, input_shape=(len(train_x[0]),), activation='relu'))
+model.add(Dense(128, input_shape=(len(train_x[0]),), acti9vation='relu'))
 model.add(Dropout(0.5))
 model.add(Dense(64, activation='relu'))
 model.add(Dropout(0.5))
 model.add(Dense(len(train_y[0]), activation='softmax'))
 
 # Compile the model
-sgd = SGD(lr=0.01, decay=1e-6, momentum=0.9, nesterov=True)
+#sgd = SGD(lr=0.01, decay=1e-6, momentum=0.9, nesterov=True)
+sgd = SGD(lr=0.01, momentum=0.9, nesterov=True)
+
 model.compile(loss='categorical_crossentropy', optimizer=sgd, metrics=['accuracy'])
 
 # Train the model
-history = model.fit(train_x, train_y, epochs=200, batch_size=5, verbose=1)
+history = model.fit(train_x, train_y, epochs=500, batch_size=5, verbose=1)
 
 # Save the trained model
-model.save('model.h5')
+model.save('model.keras')
 
 # Save the preprocessed data
 pickle.dump(words, open('words.pkl', 'wb'))
 pickle.dump(classes, open('classes.pkl', 'wb'))
-pickle.dump(degree_programs)
+pickle.dump(degree_programs, open('degree_programs.pkl', 'wb'))
+pickle.dump(prices, open('prices.pkl', 'wb'))

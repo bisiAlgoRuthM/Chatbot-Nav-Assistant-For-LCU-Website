@@ -19,6 +19,10 @@ intents = json.loads(data_file)
 
 import pandas as pd
 
+# Load the degree program and price data from CSV
+data = pd.read_csv('data_extraction/degree_price.csv')
+degree_programs = data['degree_program'].tolist()
+prices = data['price'].tolist()
 
 data = pd.read_csv('data_extraction/degree_price.csv')
 
