@@ -1,14 +1,14 @@
 import nltk
-nltk.download('popular')
 from nltk.stem import WordNetLemmatizer
-lemmatizer = WordNetLemmatizer()
 import pickle
 import numpy as np
-
-from keras.models import load_model
-model = load_model('model.keras')
 import json
 import random
+from keras.models import load_model
+
+nltk.download('popular')
+lemmatizer = WordNetLemmatizer()
+model = load_model('model.keras')
 intents = json.loads(open('intents.json').read())
 words = pickle.load(open('words.pkl','rb'))
 classes = pickle.load(open('classes.pkl','rb'))
@@ -23,7 +23,6 @@ def clean_up_sentence(sentence):
     return sentence_words
 
 # return bag of words array: 0 or 1 for each word in the bag that exists in the sentence
-
 def bow(sentence, words, show_details=True):
     # tokenize the pattern
     sentence_words = clean_up_sentence(sentence)
@@ -38,6 +37,7 @@ def bow(sentence, words, show_details=True):
                     print ("found in bag: %s" % w)
     return(np.array(bag))
 
+
 def predict_class(sentence, model):
     # filter out predictions below a threshold
     p = bow(sentence, words,show_details=False)
@@ -50,15 +50,6 @@ def predict_class(sentence, model):
     for r in results:
         return_list.append({"intent": classes[r[0]], "probability": str(r[1])})
     return return_list
-
-'''def getResponse(ints, intents_json):
-    tag = ints[0]['intent']
-    list_of_intents = intents_json['intents']
-    for i in list_of_intents:
-        if(i['tag']== tag):
-            result = random.choice(i['responses'])
-            break
-    return result'''
 
 def getResponse(ints, intents_json):
     tag = ints[0]['intent']
@@ -107,3 +98,4 @@ def get_bot_response():
 
 if __name__ == "__main__":
     app.run()
+

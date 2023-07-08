@@ -81,7 +81,7 @@ train_x, test_x, train_y, test_y = train_test_split(X, Y, test_size=0.2, random_
 
 # Create the model
 model = Sequential()
-model.add(Dense(128, input_shape=(len(train_x[0]),), acti9vation='relu'))
+model.add(Dense(128, input_shape=(len(train_x[0]),), activation='relu'))
 model.add(Dropout(0.5))
 model.add(Dense(64, activation='relu'))
 model.add(Dropout(0.5))
@@ -94,7 +94,7 @@ sgd = SGD(lr=0.01, momentum=0.9, nesterov=True)
 model.compile(loss='categorical_crossentropy', optimizer=sgd, metrics=['accuracy'])
 
 # Train the model
-history = model.fit(train_x, train_y, epochs=500, batch_size=5, verbose=1)
+history = model.fit(train_x, train_y, epochs=700, batch_size=5, verbose=1)
 
 # Save the trained model
 model.save('model.keras')
